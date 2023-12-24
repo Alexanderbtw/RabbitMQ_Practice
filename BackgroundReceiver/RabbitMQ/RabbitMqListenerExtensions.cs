@@ -13,7 +13,7 @@ namespace BackgroundReceiver.RabbitMQ
             if (collection == null) throw new ArgumentNullException(nameof(collection));
             if (config == null) throw new ArgumentNullException(nameof(config));
 
-            collection.Configure<RabbitMqListener>(config);
+            collection.Configure<RabbitMqOptions>(config);
             return collection.AddHostedService<RabbitMqListener>();
         }
     }

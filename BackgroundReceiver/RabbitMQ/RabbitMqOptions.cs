@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BackgroundReceiver.RabbitMQ
+{
+    public class RabbitMqOptions
+    {
+        public string Host { get; set; }
+        public string Queue { get; set; }
+    }
+}
